@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme1">#7D1D8E</color>
+    <color name="theme2">#CB4EE0</color>
+    <color name="toggle_btn">#87149B</color>
+    <color name="button">#420BA3</color>
+    <color name="price_text">#FFC107</color>
+    <color name="icon_background_color">#FFE3E3</color>
+    <color name="latest_price_text">#1F32AF</color>
+</resources>

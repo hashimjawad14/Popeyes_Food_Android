@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/theme_gradient"
+    android:orientation="vertical"
+    android:weightSum="2.5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="229dp"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_popeye" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_button"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:backgroundTint="@color/white"
+                        android:text="Existing Users"
+                        android:textColor="@color/toggle_btn"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="3dp"
+                        android:backgroundTint="@color/toggle_btn"
+                        android:text="New Users"
+                        android:id="@+id/new_user_btn"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="489dp"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:layout_marginTop="100dp">
+
+            <View
+                android:id="@+id/white_round"
+                android:layout_width="355dp"
+                android:layout_height="328dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corners">
+
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="328dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/unametb"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:textColor="@color/theme1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/unametb"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/username_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/emailtb"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:hint="Email"
+                        android:textColor="@color/theme1"
+                        android:inputType="textEmailAddress"/>
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_alignEnd="@+id/emailtb"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/email_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/passwordtb"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:hint="Password"
+                        android:textColor="@color/theme1"
+                        android:inputType="textPassword|text"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/passwordtb"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/lock_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/confirm_passwordtb"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:hint="Confirm Password"
+                        android:textColor="@color/theme1"
+                        android:inputType="textPassword|text"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/confirm_passwordtb"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/lock_icon" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_alignBottom="@+id/white_round"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-42dp"
+                android:backgroundTint="@color/button"
+                android:text="Sign Up"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
